@@ -27,29 +27,33 @@ Python should be installed in the device.
 ### Installation
 
 1. Clone the repo
-   ```sh
+   ```bash
    git clone https://github.com/IUC4801/SSL-TLS-Checker.git
    ```
    
 2. After cloning this repository, install the following dependencies:
-```bash
-  pip install -r requirements.txt
-```
+   ```bash
+    pip install -r requirements.txt
+   ```
 ## Usage
+
 To check the SSL/TLS configuration of a server, run the following command:
-
-
+   ```bash
+    python ssl-tls-checker.py [hostname] [-p port]
+   ```
+   where `hostname` is the hostname of the server and `port` is the port number (default: 443).
+   
+## Example
+To check the SSL/TLS configuration of google.com on port 443:
+   ```bash
+    python ssl-tls-checker.py google.com
+   ```
+To check the SSL/TLS configuration of google.com on port 8080:
+   ```bash
+    python ssl-tls-checker.py google.com -p 8080
+   ```
+   
 ## Machine configuration
 - `OS:` Windows 10 64 bit
 - `RAM:` 8 GB 
 - `Processor:` 11th Gen Intel(R) Core(TM) i5
-
-
-## Dependencies
-* [React.js](https://reactjs.org/)
-* [Material UI](https://v4.mui.com/)
-* [Chart.js](https://react-chartjs-2.netlify.app/)
-* [Firebase](https://firebase.google.com/)
-
-## Demo
-The site is live at: [https://cryptoverse101.netlify.app/](https://cryptoverse101.netlify.app/) 
